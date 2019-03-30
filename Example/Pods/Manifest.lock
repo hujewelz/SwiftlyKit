@@ -1,0 +1,41 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Hotaru/Core (1.1.1):
+    - Alamofire (~> 4.5.0)
+  - Kingfisher (4.10.1)
+  - MJRefresh (3.1.15.7)
+  - SnapKit (4.2.0)
+  - SwiftlyKit (0.1.0):
+    - SwiftlyKit/Core (= 0.1.0)
+  - SwiftlyKit/Core (0.1.0):
+    - Hotaru/Core
+    - Kingfisher
+    - MJRefresh
+    - SnapKit
+
+DEPENDENCIES:
+  - SwiftlyKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Hotaru
+    - Kingfisher
+    - MJRefresh
+    - SnapKit
+
+EXTERNAL SOURCES:
+  SwiftlyKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Hotaru: a87cfed9a917a04187500488b18b74e12be92f49
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftlyKit: e6f56114a2e619f116a0d54b0d37019b3b7dad2e
+
+PODFILE CHECKSUM: 02b7c97581f8a4dc74b0c7b308f2eb6a9f70a255
+
+COCOAPODS: 1.5.3

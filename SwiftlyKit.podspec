@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftlyKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SwiftlyKit.'
+  s.summary          = 'A tool kit for Swift developer.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+SwiftlyKit is a tool kit for Swift developer.
                        DESC
 
   s.homepage         = 'https://github.com/hujewelz/SwiftlyKit'
@@ -30,13 +30,19 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SwiftlyKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'SwiftlyKit' => ['SwiftlyKit/Assets/*.png']
-  # }
+  s.default_subspec = 'Core'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.subspec 'Core' do |cs|
+      cs.source_files = 'SwiftlyKit/Classes/Core/**/*'
+      
+      cs.resource_bundles = {
+          'SwiftlyKit' => ['SwiftlyKit/Assets/*.{xib,storyboard}']
+      }
+      cs.resource = ['SwiftlyKit/Assets/**/*.{png,xcassets,json,imageset}']
+      cs.dependency 'SnapKit' #, '~> 3.2.0'
+      cs.dependency 'Hotaru/Core'
+      cs.dependency 'MJRefresh'#, '~> 3.1.12'
+      cs.dependency 'Kingfisher'#, '~> 3.5.2'
+  end
 end

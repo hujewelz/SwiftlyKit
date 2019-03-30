@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0B2CF08F9FFBB171FC1026DA /* Pods-SwiftlyKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftlyKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftlyKit_Tests/Pods-SwiftlyKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1EDC082BB10871413D90C316 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1EDC082BB10871413D90C316 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftlyKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftlyKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +41,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7B3CA282BBC97269A375E35D /* Pods-SwiftlyKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftlyKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftlyKit_Example/Pods-SwiftlyKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		93D4E60078619C669DF8F837 /* SwiftlyKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftlyKit.podspec; path = ../SwiftlyKit.podspec; sourceTree = "<group>"; };
+		93D4E60078619C669DF8F837 /* SwiftlyKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftlyKit.podspec; path = ../SwiftlyKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AF1B41659E117E0EE5385DB2 /* Pods-SwiftlyKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftlyKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftlyKit_Example/Pods-SwiftlyKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D511FAAFB23E5ABAFA534B01 /* Pods-SwiftlyKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftlyKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftlyKit_Tests/Pods-SwiftlyKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		E25059C18F85EFBDF052A7E7 /* Pods_SwiftlyKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftlyKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB51CD1836620ACDEE246DC7 /* Pods_SwiftlyKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftlyKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAB4512A5EA92D30089C3641 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FAB4512A5EA92D30089C3641 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,12 +314,22 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftlyKit_Example/Pods-SwiftlyKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Hotaru/Hotaru.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftlyKit/SwiftlyKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hotaru.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftlyKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
