@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 //extension String {
 //    func urlFromEduDomain() -> URL?{

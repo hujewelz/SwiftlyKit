@@ -43,6 +43,6 @@ SwiftlyKit is a tool kit for Swift developer.
       cs.dependency 'SnapKit' #, '~> 3.2.0'
       cs.dependency 'Hotaru/Core'
       cs.dependency 'MJRefresh'#, '~> 3.1.12'
-      cs.dependency 'Kingfisher'#, '~> 3.5.2'
+      #cs.dependency 'Kingfisher'#, '~> 3.5.2'
   end
 end
