@@ -53,7 +53,7 @@ public class EmptyView: UIView, EmptyViewType {
         setupView()
     }
     
-    public init(frame: CGRect,placeholderIconName: String = "noData",
+    public init(frame: CGRect, placeholderIconName: String = "noData",
                 text: String?,
                 buttonTitle: String? = nil,
                 subTitle: String? = nil) {

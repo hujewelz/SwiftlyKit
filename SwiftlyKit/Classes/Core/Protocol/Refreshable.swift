@@ -26,15 +26,16 @@ public protocol Refreshable: class {
 public extension Refreshable {
     
     public var header: MJRefreshHeader {
-        let h = XMRefreshHeader(refreshingBlock: { [weak self] in
+        let h = MJRefreshNormalHeader(refreshingBlock: { [weak self] in
             self?.loadNewData()
         })
-        
+        h?.lastUpdatedTimeLabel.isHidden = true
+        h?.stateLabel.isHidden = true
         return h!
     }
     
     public var footer: MJRefreshFooter {
-        let f = SWRefreshFooter(refreshingBlock: { [weak self] in
+        let f = MJRefreshAutoNormalFooter(refreshingBlock: { [weak self] in
             self?.loadPageData()
         })
         return f!
@@ -42,7 +43,6 @@ public extension Refreshable {
     
     
     public func beginRefreshing(_ isRefresh: Bool = true) {
-        
         if viewForHeader() != nil && viewForHeader()?.mj_header == nil {
             viewForHeader()?.mj_header = header
             header.refreshingBlock = { [weak self] in

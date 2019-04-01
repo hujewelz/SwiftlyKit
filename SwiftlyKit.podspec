@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftlyKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A tool kit for Swift developer.'
 
 # This description is used to generate tags and improve search results.
